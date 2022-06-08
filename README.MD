@@ -1,18 +1,18 @@
-Turff Backend Codding Challenge
+## Turff Backend Codding Challenge
 
-Backend (Node + Express)
+#### Backend (Node + Express)
 
-MySQL Tables = 3
-Users
+#### MySQL Tables = 3
+##### Users
 USERID(PK), Name
 
-Comments 
+##### Comments 
 ID(PK), USERID(FK), ticket_id, Text
 
-Tickets
+##### Tickets
 ID(PK), USERID(FK), Title, Description
 
-Routes
+#####  Routes
 localhost:5000/api/v1/users (POST)
 localhost:5000/api/v1/tickets (GET)
 localhost:5000/api/v1/tickets/full (GET)
@@ -20,14 +20,10 @@ localhost:5000/api/v1/tickets/add-comment (POST)
 localhost:5000/api/v1/tickets/:id (PUT)
 
 
-Security
+#####  Security
 
 XSS
 Rate Limiter
 Helmet
-
-
-
-
 
 
