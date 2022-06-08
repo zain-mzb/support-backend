@@ -44,6 +44,8 @@ const createTicket = async (req, res) => {
 };
 
 const addComment = async (req, res) => {
+
+
   var sql = "INSERT INTO comments (ID, USERID, ticket_id, Text) VALUES ?";
   var values = [req.body];
   connectDB.query(sql, [values], function (err, rows) {
@@ -81,7 +83,7 @@ const editTicket = async (req, res) => {
   connectDB.query(sql, function (err, rows) {
     if (err) res.status(500).json("Something went wrong");
     console.log("Number of records affected: " + rows.affectedRows);
-    res.status(200).json("Number of records affected: ", rows.affectedRows);
+    res.status(200);
   });
 };
 
